@@ -1,4 +1,4 @@
-package com.movil.ontime.ui.dashboard
+package com.movil.ontime.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.movil.ontime.databinding.FragmentAgregarBinding
+import com.movil.ontime.databinding.FragmentConfigurarBinding
 
-class DashboardFragment : Fragment() {
+class ConfigurarFragment : Fragment() {
 
-    private var _binding: FragmentAgregarBinding? = null
+    private var _binding: FragmentConfigurarBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val configurarViewModel =
+            ViewModelProvider(this).get(ConfigurarViewModel::class.java)
 
-        _binding = FragmentAgregarBinding.inflate(inflater, container, false)
+        _binding = FragmentConfigurarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textNotifications
+        configurarViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

@@ -1,17 +1,26 @@
 package com.movil.ontime.ui.home
 
+import android.R
 import android.os.Bundle
+import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
-import com.movil.ontime.databinding.FragmentHomeBinding
+import androidx.navigation.findNavController
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+
+import com.movil.ontime.databinding.FragmentListarBinding
+
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentListarBinding? = null
+    lateinit var addFAB: FloatingActionButton
+    private lateinit var viewModel: HomeViewModel
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,18 +34,23 @@ class HomeFragment : Fragment() {
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentListarBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
-    override fun onDestroyView() {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.floatingAddButton.setOnClickListener {
+            val action =  HomeFragmentDirections.actionHomeToFragmetDatePicker()
+            binding.root.findNavController().navigate(action)
+        }
+    }
+
+        override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+
 }

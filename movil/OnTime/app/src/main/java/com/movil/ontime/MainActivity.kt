@@ -26,7 +26,8 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_listar, R.id.navigation_agregar, R.id.navigation_sincronizar,
+                R.id.navigation_configurar
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

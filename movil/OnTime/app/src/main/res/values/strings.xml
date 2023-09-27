@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">OnTime</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_listar">Listar</string>
+    <string name="title_agregar">Agregar</string>
+    <string name="title_sincronizar">Sincronizar</string>
+    <string name="title_configurar">Configurar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_estado_clima">Estado del clima</string>
+    <string name="check_movilidad">Movilidad</string>
+    <string name="check_noticias">Noticias</string>
+    <string name="check_indicadores">Indicadores</string>
+    <string name="text_title_notificacion">Seleccionar Notifiación</string>
+    <string name="text_notificacion_notificacion">A Contnuación selecciona el tipo de notificación a configurar</string>
+    <string name="btn_notificacion_continuar">Continuar</string>
+    <string name="dialog_title">Éxito!</string>
+    <string name="dialog_message">Tu alarma ha sido cofigurada éxitosamente!</string>
+    <string name="dialog_ok_btn">Ok</string>
+    <string name="text_title_OnTime">Tu Alarma OTime</string>
+    <string name="text_descripcion_clima">A Contnuación selecciona la ciudad para obtener el estado del clima.</string>
+    <string name="text_inputciudad_clima">Nombre de la ciudad</string>
 </resources>
