@@ -15,3 +15,7 @@ Instrucciones:
 
 El browser se abrira y mostrara la pagina de ingreso a la aplicacion
 ![paginaInicio](https://github.com/stonejfg/MISW4302_USX_GRUPO4/assets/111403006/f9f8419f-0a77-455c-a961-2cefd1701aba)
+
+
+## Notas:
+- se crearon tres pantallas, ingreso, menu principal, y creacion de alarma y la navegacion entre ellas
