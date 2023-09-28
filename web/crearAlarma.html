@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&family=Rubik:wght@600&family=Stalinist+One&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <a href=""><i class='bx bx-menu icon'></i></a>
+            <a href="#">
+                <p>www.ontime.com</p>
+            </a>
+        </div>
+        <div class="iconos">
+            <a href=""><i class='bx bx-search-alt-2 icon'></i></a>
+            <a href=""><i class='bx bxs-bell icon'></i></a>
+            <a href=""><i class='bx bx-share-alt icon'></i></a>
+            <a href="/Index.html"><i class='bx bx-log-out'></i></a>
+        </div>
+    </nav>
+    <section>
+        <div class="main">
+            <h2>Tu Alarma</h2>
+            <h3>OnT:ME</h1>
+        </div>
+        <div class="clock">
+            <p class="titulo">CREAR ALARMA</p>
+            <div class="VbCancel">
+                <a href="/Menu.html"><button class="botones">GUARDAR</button></a>
+                <a href="/Menu.html"><button class="botones">CANCELAR</button></a>
+            </div>
+            <div class="alarma">
+                <div class="after">3</div>
+                <div class="before">1</div>
+                <div class="afterMin">51</div>
+                <div class="minBefore">49</div>
+                <div style="width: 500px; height: 70px; left: 0px; top: 59px; position: absolute">
+                    <div class="l">
+                        <div class="pmAnterior">
+                        </div>
+                    </div>
+                    <div style="left: 158px; top: 9px; position: absolute">
+                        <span class="actualHour">2</span>
+                        <span class="emptyActual"></span>
+                    </div>
+                    <div class="minActual">50</div>
+                    <div class="am">AM</div>
+                </div>
+                <div class="pm">PM</div>
+            </div>
+            <div class="propiedades">
+                <div class="opcionesProp">
+                    <p class="left">Repetir</p>
+                    <select name="Repetir" id="repetir">
+                        <option value="Nunca">Nunca</option>
+                        <option value="Todos los días">Todos los días</option>
+                    </select>
+                </div>
+                <div class="opcionesProp">
+                    <p class="left">Etiqueta</p>
+                    <input type="text" name="alarmaText" id="alarmaText" class="etiqueta" value="Alarma">
+                </div>
+                <div class="opcionesProp">
+                    <p class="left">Sonido</p>
+                    <select name="Repetir" id="repetir">
+                        <option value="circuit">Circuit</option>
+                        <option value="cosmic">Cosmic</option>
+                        <option value="beacon">Beacon</option>
+                    </select>
+                </div>
+            </div>
+            <p class="subtituloAlarma">Servicios</p>
+            <div class="opcionesAlarma">
+                <form>
+                    <div class="radioSelect">
+                        <label for="radioTrafico" class="radioLabel">TRAFICO</label>
+                        <input type="radio" id="radioTrafico" name="radiobutton" value="TRAFICO">
+                    </div>
+                    <div class="radioSelect">
+                        <label for="radioNoticias" class="radioLabel">NOTICIAS</label>
+                        <input type="radio" id="radioNoticias" name="radiobutton" value="NOTICIAS">
+                    </div>
+                    <div class="radioSelect">
+                        <label for="radioClima" class="radioLabel">CLIMA</label>
+                        <input type="radio" id="radioClima" name="radiobutton" value="CLIMA">
+                    </div>
+                </form>
+                <input type="text" name="origen" id="origen" class="inputOrDe" value="origen">
+                <input type="text" name="destino" id="destino" class="inputOrDe" value="destino">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

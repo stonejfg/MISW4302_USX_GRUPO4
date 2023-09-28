@@ -1,0 +1,475 @@
+* {
+    width: 100%;
+    /*1440px*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #77767A;
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    width: 30%;
+}
+
+.menu a {
+    margin: 20px;
+    height: 24px;
+    width: 24px;
+    font-size: 30px;
+    align-self: center;
+    color: #FFFFFF;
+}
+
+
+.menu p {
+    margin-left: 10px;
+    font-size: 30px;
+    align-self: center;
+}
+
+.iconos {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 70%;
+    margin-right: 24px;
+}
+
+.iconos a {
+    width: 24px;
+    margin: 15px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.icon {
+    width: 100%;
+}
+
+section {
+    height: 1100px;
+    width: 100%;
+    background: url("/img/reloj.png") no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    color: #FFFFFF;
+    padding-left: 49px;
+    padding-top: 30px;
+}
+
+.main h2 {
+    font-family: 'Rubik', sans-serif;
+    width: 724px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.main h3 {
+    font-size: 40px;
+    width: 724px;
+    font-family: 'Stalinist One', cursive;
+    font-weight: 400;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    height: 860px;
+    margin-left: 0.22vw;
+    /* width: 860px;
+    -moz-border-radius: 400px;
+    border-radius: 400px;
+    /*background-color: rgba(171, 171, 205, 0.6);*/
+    background-image: url(/img/ClockBell.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+
+
+.clock .titulo {
+    /*color: #FFFFFF;*/
+    text-align: center;
+    width: 309px;
+    height: 56px;
+    margin-top: 130px;
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    align-self: center;
+}
+
+
+.labelLogin {
+    align-self: center;
+    margin-top: 43px;
+    width: 328px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inputLogin {
+    align-self: center;
+    width: 328px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding-left: 10px;
+    color: #77767A;
+    font-family: 'Roboto', sans-serif;
+}
+
+.submitClock {
+    align-self: center;
+    width: 237px;
+    height: 43px;
+    margin-top: 99px;
+
+}
+
+.submitClock button {
+    padding: 6px, 6px, 6px, 8px;
+    border-radius: 4px;
+    background-color: #041DFE;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 25px;
+
+    border: #041DFE;
+}
+
+.opciones {
+    align-self: center;
+    width: 299px;
+    margin-top: 8px;
+    height: 25px;
+
+}
+
+.opciones p {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+}
+
+.menuPppal {
+    align-items: center;
+}
+
+
+.menuPppal p {
+    text-align: center;
+    width: 256px;
+    font-size: 32px;
+    color: black;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+.iconCentro {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 640px;
+}
+
+.sync {
+    margin-top: 120px;
+    height: 97px;
+    width: 110px;
+}
+
+
+.center {
+    margin-top: 80px;
+    width: 110px;
+    align-content: space-around;
+}
+
+.tituloCentro {
+    display: flex;
+    width: 820px;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.servicios {
+    margin-top: 100px;
+    width: 160px;
+}
+
+.VbCancel {
+    display: flex;
+    align-self: center;
+    width: 455px;
+    height: 28px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.VbCancel a {
+    height: 28px;
+    width: 186px;
+}
+
+.botones {
+    border: #041DFE;
+    background-color: #041DFE;
+    color: #FFFFFF;
+    padding: 6px, 6px, 6px, 8px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.alarma {
+    margin-top: 15px;
+    align-self: center;
+    width: 500px;
+    height: 185px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 35px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    line-height: 56px;
+    word-wrap: break-word" 
+
+}
+
+.after {
+    left: 158px;
+    top: 129px;
+    position: absolute;
+}
+
+.before {
+    left: 158px;
+    top: 0px;
+    position: absolute;
+}
+
+.afterMin {
+    left: 229px;
+    top: 129px;
+    position: absolute;
+}
+
+.minBefore {
+    left: 225px;
+    top: 0px;
+    position: absolute;
+
+}
+
+.pm {
+    left: 319px;
+    top: 129px;
+    position: absolute;
+}
+
+.am {
+    left: 315px;
+    top: 9px;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+}
+
+.minActual {
+    left: 225px;
+    top: 9px;
+    position: absolute;
+    color: #FFFCFC;
+}
+
+.actual {
+    width: 500px;
+    height: 70px;
+    left: 0px;
+    top: 59px;
+    position: absolute"
+
+}
+
+.l {
+    width: 500px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+}
+
+.pmAnterior {
+    width: 500px;
+    height: 70px;
+    background: rgba(6.04, 20.55, 96.69, 0.81);
+    border-radius: 5px
+}
+
+.actualHour {
+    color: #FAF7F7;
+    font-size: 40px;
+}
+
+.emptyActual {
+    color: rgba(249.89, 246.76, 246.76, 0.87);
+    font-size: 40px;
+
+}
+
+.propiedades {
+    align-self: center;
+    height: 161px;
+    width: 500px;
+    background: rgba(6.04, 20.55, 96.69, 0.81);
+    border-radius: 5px
+}
+
+.opcionesProp {
+    display: flex;
+    justify-items: center;
+    color: #FAF7F7;
+    font-size: 30px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    line-height: 56px;
+    word-wrap: break-word
+}
+
+.opcionesProp select {
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    color: white;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    background-color: rgba(6.04, 20.55, 96.69, 0.9);
+    border: rgba(6.04, 20.55, 96.69, 1);
+    text-align: center;
+
+}
+
+.etiqueta {
+    height: 30px;
+    width: 140px;
+    margin-top: 10px;
+    background-color: rgba(6.04, 20.55, 96.69, 0.9);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #FAF7F7;
+    text-align: center;
+    border: rgba(9, 27, 120, 0.7);
+}
+
+.right {
+    padding-right: 15px;
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.subtituloAlarma {
+    align-self: center;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    line-height: 56px;
+    width: 860px;
+}
+
+.opcionesAlarma {
+    align-self: center;
+    display: flex;
+    width: 480px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-right: 10px;
+
+}
+
+.radioSelect {
+    display: flex;
+    width: 150px;
+    justify-items: center;
+}
+
+.radioSelect input {
+    line-height: 16px;
+    width: 24px;
+    height: 15px;
+    letter-spacing: 1.25px;
+
+}
+
+.radioLabel {
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.opcionesAlarma #origen #destino {
+    height: 50px;
+    width: 182px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+
+}
+
+.inputOrDe {
+    color: #07124B;
+    padding: 6px, 6px, 6px, 8px;
+    height: 35px;
+    width: 152px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 8px;
+}
