@@ -15,17 +15,21 @@
         android:id="@+id/navigation_agregar"
         android:name="com.movil.ontime.ui.dashboard.DashboardFragment"
         android:label="@string/title_agregar"
-        tools:layout="@layout/fragment_agregar" />
+        tools:layout="@layout/fragment_agregar" >
+        <action
+            android:id="@+id/action_navigation_agregar_to_navigation_fragment_time_picker"
+            app:destination="@id/navigation_fragment_time_picker" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_sincronizar"
-        android:name="com.movil.ontime.ui.notifications.ConfigurarFragment"
+        android:name="com.movil.ontime.ui.notifications.NotificationsFragment"
         android:label="@string/title_sincronizar"
         tools:layout="@layout/fragment_sincronizar" />
 
     <fragment
         android:id="@+id/navigation_configurar"
-        android:name="com.movil.ontime.ui.notifications.ConfigurarFragment"
+        android:name="com.movil.ontime.ui.configurar.ConfigurarFragment"
         android:label="@string/title_configurar"
         tools:layout="@layout/fragment_configurar" />
 
@@ -37,6 +41,9 @@
         <action
             android:id="@+id/action_navigation_fragment_time_picker_to_navigation_fragment_clima"
             app:destination="@id/navigation_fragment_clima" />
+        <action
+            android:id="@+id/action_navigation_fragment_time_picker_to_navigation_mapas_origen"
+            app:destination="@id/navigation_mapas_origen" />
     </fragment>
 
 
@@ -46,8 +53,8 @@
         android:label="@string/app_name"
         tools:layout="@layout/fragment_clima">
         <action
-            android:id="@+id/action_navigation_fragment_clima_to_navigation_listar"
-            app:destination="@id/navigation_listar" />
+            android:id="@+id/action_navigation_fragment_clima_to_floating_add_button"
+            app:destination="@id/floating_add_button" />
     </fragment>
 
 
@@ -62,6 +69,46 @@
             app:destination="@id/navigation_fragment_time_picker" />
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_mapas_origen"
+        android:name="com.movil.ontime.ui.mapas.MapasOrigenFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_mapas_origen" >
+        <action
+            android:id="@+id/action_navigation_mapas_origen_to_navigation_maps"
+            app:destination="@id/navigation_maps" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.movil.ontime.maps.MapsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_navigation_maps_to_navigation_mapas_destino"
+            app:destination="@id/navigation_mapas_destino" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_mapas_destino"
+        android:name="com.movil.ontime.ui.mapas.destino.MapasDestinoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_mapas_destino"  >
+        <action
+            android:id="@+id/action_navigation_mapas_destino_to_navigation_maps_destino"
+            app:destination="@id/navigation_maps_destino" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_maps_destino"
+        android:name="com.movil.ontime.maps.destino.MapsDestinoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_maps_destino"  >
+        <action
+            android:id="@+id/action_navigation_maps_destino_to_floating_add_button"
+            app:destination="@id/floating_add_button" />
+    </fragment>
 
 
 </navigation>

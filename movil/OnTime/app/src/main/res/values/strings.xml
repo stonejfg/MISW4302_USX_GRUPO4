@@ -19,4 +19,11 @@
     <string name="text_title_OnTime">Tu Alarma OTime</string>
     <string name="text_descripcion_clima">A Contnuación selecciona la ciudad para obtener el estado del clima.</string>
     <string name="text_inputciudad_clima">Nombre de la ciudad</string>
+    <string name="text_descripcion_mapas_origen">A Contnuación selecciona la tu lugar de origen.</string>
+    <string name="text_input_mapas_ciudad_origen">Ciudad Origen</string>
+    <string name="text_descripcion_mapas_destino">A Contnuación selecciona la tu lugar de destino.</string>
+    <string name="text_input_mapas_ciudad_destino">Ciudad destino</string>
+    <string name="btn_sincronizar">pulse para sincronizar</string>
+    <string name="text_title_configurar">Configuración</string>
+    <string name="btn_configuracion_guardar">Guardar</string>
 </resources>

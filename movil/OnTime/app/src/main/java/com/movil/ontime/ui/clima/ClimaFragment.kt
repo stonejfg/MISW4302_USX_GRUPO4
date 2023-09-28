@@ -8,9 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.movil.ontime.databinding.FragmentClimaBinding
-import com.movil.ontime.ui.TimePciker.TimePickerFragmentDirections
 
 class ClimaFragment : Fragment() {
 
@@ -32,32 +30,22 @@ class ClimaFragment : Fragment() {
         _binding = FragmentClimaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textTituloFragmentClima
+        /*val textView: TextView = binding.textTituloFragmentClima
         climaViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
-        }
-
-
+        }*/
         return root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnClimaContinuar.setOnClickListener {
-
-            MaterialAlertDialogBuilder(this.requireContext())
-                .setTitle("Éxito!")
-                .setMessage("Tu alarma ha sido cofigurada éxitosamente!")
-                .setPositiveButton("Ok") { dialog, which ->
-                    // Respond to positive button press
-                }
-                .show()
-        }
-            val action =  ClimaFragmentDirections.actionNavigationFragmentClimaToNavigationListar()
+            val action = ClimaFragmentDirections.actionNavigationFragmentClimaToFloatingAddButton()
             binding.root.findNavController().navigate(action)
 
 
         }
+    }
 
 
      override fun onDestroyView() {

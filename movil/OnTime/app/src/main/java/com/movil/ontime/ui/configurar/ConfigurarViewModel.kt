@@ -1,4 +1,4 @@
-package com.movil.ontime.ui.notifications
+package com.movil.ontime.ui.configurar
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

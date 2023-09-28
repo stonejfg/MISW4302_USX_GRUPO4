@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maps.destino.MapsDestinoFragment"
+    android:background="@drawable/fondo">
+
+
+    <Button
+        android:id="@+id/btn_mapas_destino_selec"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="320dp"
+        android:text="@string/btn_notificacion_continuar"
+        android:textColor="?attr/colorSecondary"
+        app:backgroundTint="?attr/colorPrimary"
+        app:iconTint="#039DE3"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

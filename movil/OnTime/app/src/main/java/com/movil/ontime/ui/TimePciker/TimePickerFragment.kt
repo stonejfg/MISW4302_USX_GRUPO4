@@ -112,7 +112,8 @@ class TimePickerFragment : Fragment() {
                 val action =  TimePickerFragmentDirections.actionNavigationFragmentTimePickerToNavigationFragmentClima()
                 binding.root.findNavController().navigate(action)
             }else if(movilidad == true){
-
+                val action =  TimePickerFragmentDirections.actionNavigationFragmentTimePickerToNavigationMapasOrigen()
+                binding.root.findNavController().navigate(action)
             }
 
         }

@@ -1,4 +1,4 @@
-package com.movil.ontime.ui.notifications
+package com.movil.ontime.ui.configurar
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.movil.ontime.databinding.FragmentConfigurarBinding
 
 class ConfigurarFragment : Fragment() {
@@ -28,13 +29,25 @@ class ConfigurarFragment : Fragment() {
         _binding = FragmentConfigurarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        configurarViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnConfiguracionGuardar.setOnClickListener {
+
+            MaterialAlertDialogBuilder(this.requireContext())
+                .setTitle("Éxito!")
+                .setMessage("Sus configuraciones se ha actualizado! ")
+                .setPositiveButton("Ok") { dialog, which ->
+                    // Respond to positive button press
+                }
+                .show()
+
+        }
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

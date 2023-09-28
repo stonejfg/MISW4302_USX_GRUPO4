@@ -4,10 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.movil.ontime.databinding.FragmentSincronizarBinding
+import com.movil.ontime.ui.configurar.ConfigurarViewModel
 
 class NotificationsFragment : Fragment() {
 
@@ -23,18 +24,28 @@ class NotificationsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val notificationsViewModel =
-            ViewModelProvider(this).get(ConfigurarViewModel::class.java)
+            ViewModelProvider(this).get(NotificationsViewModel::class.java)
 
         _binding = FragmentSincronizarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
         return root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+       binding.btnSincronizar.setOnClickListener {
+            MaterialAlertDialogBuilder(this.requireContext())
+                .setTitle("Éxito!")
+                .setMessage("Sincronización Exitosa")
+                .setPositiveButton("Ok") { dialog, which ->
+                    // Respond to positive button press
+                }
+                .show()
+        }
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
