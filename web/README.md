@@ -2,7 +2,7 @@
 
 Instrucciones:
 1. Descargar el proyecto
-2. Abrir el folder web (raiz) en visual studio code
+2. Abrir Visual Studio Code y abrir el folder web como la raiz 
 3. Instalar la extension Live Server
 4. Click derecho sobre el archivo Index.html y seleccionar: Open with Live server
 
