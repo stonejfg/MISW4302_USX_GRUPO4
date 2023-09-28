@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/floating_add_button">
+
+    <fragment
+        android:id="@+id/navigation_listar"
+        android:name="com.movil.ontime.ui.home.HomeFragment"
+        android:label="@string/title_listar"
+        tools:layout="@layout/fragment_listar" />
+
+    <fragment
+        android:id="@+id/navigation_agregar"
+        android:name="com.movil.ontime.ui.dashboard.DashboardFragment"
+        android:label="@string/title_agregar"
+        tools:layout="@layout/fragment_agregar" />
+
+    <fragment
+        android:id="@+id/navigation_sincronizar"
+        android:name="com.movil.ontime.ui.notifications.ConfigurarFragment"
+        android:label="@string/title_sincronizar"
+        tools:layout="@layout/fragment_sincronizar" />
+
+    <fragment
+        android:id="@+id/navigation_configurar"
+        android:name="com.movil.ontime.ui.notifications.ConfigurarFragment"
+        android:label="@string/title_configurar"
+        tools:layout="@layout/fragment_configurar" />
+
+    <fragment
+        android:id="@+id/navigation_fragment_time_picker"
+        android:name="com.movil.ontime.ui.TimePciker.TimePickerFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_date_picker" >
+        <action
+            android:id="@+id/action_navigation_fragment_time_picker_to_navigation_fragment_clima"
+            app:destination="@id/navigation_fragment_clima" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_fragment_clima"
+        android:name="com.movil.ontime.ui.clima.ClimaFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_clima">
+        <action
+            android:id="@+id/action_navigation_fragment_clima_to_navigation_listar"
+            app:destination="@id/navigation_listar" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/floating_add_button"
+        android:name="com.movil.ontime.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_listar">
+        <action
+            android:id="@+id/action_home_to_fragmetDatePicker"
+            app:destination="@id/navigation_fragment_time_picker" />
+    </fragment>
+
+
+
+</navigation>

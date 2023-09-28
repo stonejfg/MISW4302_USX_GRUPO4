@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TimePciker.TimePickerFragment"
+    android:background="@drawable/fondo">
+
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/check_estado_clima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:checked="false"
+        android:text="@string/check_estado_clima"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="129dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/check_indicadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="170dp"
+        android:checked="false"
+        android:text="@string/check_indicadores"
+        app:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="321dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/check_movilidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="220dp"
+        android:checked="false"
+        android:text="@string/check_movilidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="193dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/check_noticias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="270dp"
+        android:checked="false"
+        android:text="@string/check_noticias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="257dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/text_titulo_notificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/text_title_notificacion"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/text_descripcion_notifiacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/text_notificacion_notificacion"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="65dp"
+        android:textColor="?attr/colorPrimary"/>
+
+
+    <Button
+        android:id="@+id/btn_notificacion_continuar"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="330dp"
+        android:text="@string/btn_notificacion_continuar"
+        android:textColor="?attr/colorSecondary"
+        app:backgroundTint="?attr/colorPrimary"
+        app:iconTint="#039DE3"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

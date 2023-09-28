@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_listar"
+        android:icon="@drawable/baseline_format_list_numbered_24"
+        android:title="@string/title_listar" />
+
+    <item
+        android:id="@+id/navigation_agregar"
+        android:icon="@drawable/baseline_add_alarm_24"
+        android:title="@string/title_agregar" />
+
+    <item
+        android:id="@+id/navigation_sincronizar"
+        android:icon="@drawable/baseline_sync_24"
+        android:title="@string/title_sincronizar" />
+
+    <item
+        android:id="@+id/navigation_configurar"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/title_configurar" />
+
+</menu>
